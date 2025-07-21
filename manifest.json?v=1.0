@@ -1,0 +1,24 @@
+{
+ "background_color": "#F8413B",
+ "description": "無料でマンガを楽しもう！人気作や最新話をサクッと読める。登録なしですぐにスタート。広告もなしで快適！",
+ "display": "standalone",
+ "icons": [
+  {
+   "sizes": "512x512",
+   "src": "https://cdn.jsdelivr.net/gh/konnnnitiha84238/cartoon@main/images/android-chrome-512x512.png",
+   "type": "image/png"
+  }
+ ],
+ "name": "Gomuraw",
+ "orientation": "portrait",
+ "related_applications": [
+  {
+   "platform": "webapp",
+   "url": "https://cdn.jsdelivr.net/gh/konnnnitiha84238/cartoon@main/manifest.json"
+  }
+ ],
+ "scope": "/",
+ "short_name": "Gomuraw",
+ "start_url": "/",
+ "theme_color": "#F8413B"
+}
