@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Manga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo-area">
+      <img id="logo" src="/gomuraw.webp" alt="Gomuraw ロゴ">
+      <h1 class="site-title">Gomuraw</h1>
+      <p class="site-desc">
+        登録不要でプレミアム漫画を完全無料で楽しめます！人気作品や最新話をすぐに読むことができます！
+      </p>
+    </div>
+    <div class="alert">
+      「現在、dokiraw.comからgomuraw.comへ移行中です。類似・模倣サイトにご注意のうえ、引き続き漫画をお楽しみください。」
+    </div>
+    <nav class="tab-menu">
+      <button>新追加</button>
+      <button>トレンド</button>
+      <button>連載中</button>
+      <button>18禁</button>
+      <button>BL</button>
+      <button>GL</button>
+      <button>完結</button>
+    </nav>
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="作品名で探す…">
+      <button class="search-btn" onclick="search()">検索</button>
+    </div>
+    <div class="top-btn-area">
+      <button class="top-btn">トップ</button>
+    </div>
 
+    <div class="categories">
+      <div class="category-list" id="categoryList">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function search() {
+      const q = document.getElementById('searchInput').value;
+      alert('検索機能はまだ実装されていません。\n検索ワード: ' + q);
+    }
+    fetch('data/categories.json')
+      .then(res => res.json())
+      .then(categories => {
+        const list = document.getElementById('categoryList');
+        categories.forEach(cat => {
+          const div = document.createElement('div');
+          div.className = 'category-item';
+          div.textContent = `(${cat.count}) ${cat.name}`;
+          div.onclick = () => alert(`カテゴリ「${cat.name}」ページは未実装です`);
+          list.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>
