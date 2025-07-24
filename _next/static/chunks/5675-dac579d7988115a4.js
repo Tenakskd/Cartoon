@@ -1,1 +1,58 @@
-<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><title>Gomuraw, Dokiraw, Mangaraw, MangaJikan, Manga Raw, SpoilerPlus, Mangakoma, Jmanga, Manga1000, Manga1001</title><meta name="description" content=""/><meta property="og:url" content="https://gomuraw.com/404"/><meta property="og:type" content="Website"/><meta property="twitter:card" content="summary"/><link rel="canonical" href="https://gomuraw.com/404"/><link rel="icon" href="/images/favicon.ico?v=1.0"/><link rel="manifest" href="/manifest.json?v=1.0"/><link rel="apple-touch-icon" href="/gomuraw.png"/><meta name="apple-mobile-web-app-title" content="Gomuraw"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="default"/><meta name="theme-color" content="#f8413b" media="(prefers-color-scheme: dark)"/><link href="/gomuraw.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image"/><link href="/gomuraw.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image"/><meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover"/><meta name="author" content="Gomuraw"/><meta name="copyright" content="Gomuraw"/><meta name="next-head-count" content="19"/><script>(function(){const o=Function.prototype.constructor;Object.defineProperty(Function.prototype,'constructor',{value:o,writable:false,configurable:false});})()</script><script>document.addEventListener('DOMContentLoaded',function(){const e=document.getElementById('__NEXT_DATA__');if(e){e.parentNode.removeChild(e);}});</script><link rel="preload" href="https://gomuraw.com/_next/static/css/40fc4e23c3375ef1.css" as="style"/><link rel="stylesheet" href="https://gomuraw.com/_next/static/css/40fc4e23c3375ef1.css" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="https://gomuraw.com/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="https://gomuraw.com/_next/static/chunks/webpack-281e9ad803c53795.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/framework-3671d8951bf44e4e.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/main-3d508b3100da0f33.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/pages/_app-d05ddfaa808d5d0f.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/1664-f8b91051938f8245.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/2368-ff9fa32cd1e026cb.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/2181-f9b389f9ac3c4b4b.js" defer=""></script><script src="https://gomuraw.com/_next/static/chunks/pages/404-ab4fba56e7ec61b8.js" defer=""></script><script src="https://gomuraw.com/_next/static/GomuRaw5oOTEHU24/_buildManifest.js" defer=""></script><script src="https://gomuraw.com/_next/static/GomuRaw5oOTEHU24/_ssgManifest.js" defer=""></script></head><body class="bg-gray-900"><div id="__next"><div class="ant-app"></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/404","query":{},"buildId":"GomuRaw5oOTEHU24","assetPrefix":"https://gomuraw.com","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gomuraw, Dokiraw, Mangaraw, MangaJikan, Manga Raw, SpoilerPlus, Mangakoma, Jmanga, Manga1000, Manga1001</title>
+  <meta name="description" content="">
+  <meta property="og:url" content="https://gomuraw.com/404">
+  <meta property="og:type" content="Website">
+  <meta property="twitter:card" content="summary">
+  <link rel="canonical" href="https://gomuraw.com/404">
+  <link rel="icon" href="/images/favicon.ico?v=1.0">
+  <link rel="manifest" href="/manifest.json?v=1.0">
+  <link rel="apple-touch-icon" href="/gomuraw.png">
+  <meta name="apple-mobile-web-app-title" content="Gomuraw">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#f8413b" media="(prefers-color-scheme: dark)">
+  <link href="/gomuraw.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+  <link href="/gomuraw.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover">
+  <meta name="author" content="Gomuraw">
+  <meta name="copyright" content="Gomuraw">
+  <meta name="next-head-count" content="19">
+  <script>
+  (function(){const o=Function.prototype.constructor;Object.defineProperty(Function.prototype,'constructor',{value:o,writable:false,configurable:false});})()
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded',function(){const e=document.getElementById('__NEXT_DATA__');if(e){e.parentNode.removeChild(e);}});
+  </script>
+  <link rel="preload" href="https://gomuraw.com/_next/static/css/40fc4e23c3375ef1.css" as="style">
+  <link rel="stylesheet" href="https://gomuraw.com/_next/static/css/40fc4e23c3375ef1.css" data-n-g="">
+  <noscript data-n-css="">
+  </noscript>
+  <script defer nomodule="" src="https://gomuraw.com/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+  <script src="https://gomuraw.com/_next/static/chunks/webpack-281e9ad803c53795.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/framework-3671d8951bf44e4e.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/main-3d508b3100da0f33.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/pages/_app-d05ddfaa808d5d0f.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/1664-f8b91051938f8245.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/2368-ff9fa32cd1e026cb.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/2181-f9b389f9ac3c4b4b.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/chunks/pages/404-ab4fba56e7ec61b8.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/GomuRaw5oOTEHU24/_buildManifest.js" defer></script>
+  <script src="https://gomuraw.com/_next/static/GomuRaw5oOTEHU24/_ssgManifest.js" defer></script>
+</head>
+
+<body class="bg-gray-900">
+  <div id="__next">
+    <div class="ant-app">
+    </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+  {"props":{"pageProps":{}},"page":"/404","query":{},"buildId":"GomuRaw5oOTEHU24","assetPrefix":"https://gomuraw.com","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}
+  </script>
+</body>
+
+</html>
