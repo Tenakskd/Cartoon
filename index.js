@@ -1,13 +1,8 @@
 import express from 'express';
 import http from 'node:http';
-import createBareServer from "educational-br-sr";
 import path from 'node:path';
-import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
-import ejs from 'ejs';
-import axios from 'axios';
-import miniget from 'miniget';
 import bodyParser from 'body-parser';
 
 const app = express(server);
@@ -36,8 +31,6 @@ app.use((req, res, next) => {
         next();
     }
 });
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 //ログイン済み？
 app.get('/login/if', async (req, res) => {
@@ -89,22 +82,10 @@ function parseCookies(request) {
 
 const routes = [
   { path: '/', file: 'index.html' },
-  { path: '/news', file: 'apps.html' },
-  { path: '/g/app', file: 'game.html' },
-  { path: '/events', file: 'games.html' },
-  { path: '/send', file: 'send.html' },
-  { path: '/local-news', file: 'tabs.html' },
-  { path: '/tools', file: 'tool.html' },
-  { path: '/image-galleries', file: 'go.html' },
-  { path: '/help', file: 'help.html' },
+  { path: '/top', file: '/manga/top.html' },
+  { path: '/hot', file: '/manga/hot.html' },
+  { path: '/favorite', file: '/manga/favorite.html' }
 ]
-
-app.get('/image-galleries', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'go.html'));
-});
-
-// Existing code
-//リダイレクト
 app.get('/redirect', (req, res) => {
   const subp = req.query.p;
   const id= req.query.id;
@@ -112,22 +93,6 @@ app.get('/redirect', (req, res) => {
     res.redirect(`/${subp}/${id}`);
   } else {
     res.redirect(`/${subp}`);
-  }
-});
-
-server.on('request', (req, res) => {
-  if (bareServer.shouldRoute(req)) {
-    bareServer.routeRequest(req, res);
-  } else {
-    app(req, res);
-  }
-});
-
-server.on('upgrade', (req, socket, head) => {
-  if (bareServer.shouldRoute(req)) {
-    bareServer.routeUpgrade(req, socket, head);
-  } else {
-    socket.end();
   }
 });
 
