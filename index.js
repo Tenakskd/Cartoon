@@ -31,7 +31,14 @@ app.use((req, res, next) => {
         next();
     }
 });
-
+app.get('/manga/:page', (req, res) => {
+    const filePath = path.join(__dirname, 'manga', `${req.params.page}.html`);
+    res.sendFile(filePath, (err) => {
+        if (err) {
+            res.status(404).send('ページが見つかりません');
+        }
+    });
+});
 //ログイン済み？
 app.get('/login/if', async (req, res) => {
     if (req.cookies.massiropass !== 'ok') {
