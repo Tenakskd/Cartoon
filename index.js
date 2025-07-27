@@ -38,7 +38,6 @@ app.use((req, res, next) => {
         next();
     }
 });
-
 app.get('/manga/:page', (req, res) => {
     const filePath = path.join(__dirname, 'manga', `${req.params.page}.html`);
     res.sendFile(filePath, (err) => {
@@ -100,7 +99,7 @@ function parseCookies(request) {
 }
 
 const routes = [
-  { path: '/', file: 'index.html' },
+  { path: '/', file: '/manga/index.html' },
   { path: '/top', file: '/manga/top.html' },
   { path: '/hot', file: '/manga/hot.html' },
   { path: '/favorite', file: '/manga/favorite.html' }
