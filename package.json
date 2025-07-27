@@ -1,0 +1,19 @@
+{
+  "name": "cartoon",
+  "version": "1.0.0",
+  "description": "Cartoon Free",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "cookie-parser": "^1.4.7",
+    "express-session": "^1.8.2",
+    "body-parser": "^2.2.0"
+  }
+}
