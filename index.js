@@ -60,7 +60,7 @@ app.get('/login/if', async (req, res) => {
 
 // ログインページ
 app.get('/login', (req, res) => {
-    res.render('login', { error: null });
+    res.render('../login/login.ejs')
 });
 
 // パスワード確認
