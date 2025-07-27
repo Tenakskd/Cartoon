@@ -17,6 +17,8 @@ const server = http.createServer(app);
 const PORT = 8080;
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'login'));
+
 app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -37,6 +39,7 @@ app.use((req, res, next) => {
         next();
     }
 });
+
 app.get('/manga/:page', (req, res) => {
     const filePath = path.join(__dirname, 'manga', `${req.params.page}.html`);
     res.sendFile(filePath, (err) => {
@@ -45,30 +48,32 @@ app.get('/manga/:page', (req, res) => {
         }
     });
 });
+
 //ログイン済み？
 app.get('/login/if', async (req, res) => {
     if (req.cookies.massiropass !== 'ok') {
-        res.render('../login/login.ejs', { error: 'ログインしていません。もう一度ログインして下さい' })
+        res.render('login', { error: 'ログインしていません。もう一度ログインして下さい' })
     } else {
         return res.redirect('/');
     }
 });
+
 // ログインページ
 app.get('/login', (req, res) => {
-    res.render('../login/login.ejs', { error: null });
+    res.render('login', { error: null });
 });
+
 // パスワード確認
 app.post('/login', (req, res) => {
     const password = req.body.password;
     if (password === 'makkuro') {
         res.cookie('massiropass', 'ok', { maxAge: 5 * 24 * 60 * 60 * 1000, httpOnly: true });
-        
         return res.redirect("/");
     } else {
         if (password === 'ohana') {
             return res.redirect('https://ohuaxiehui.webnode.jp');
         } else {
-            res.render('../login/login.ejs', { error: 'パスワードが間違っています。もう一度お試しください。' });
+            res.render('login', { error: 'パスワードが間違っています。もう一度お試しください。' });
         }
     }
 });
@@ -78,6 +83,7 @@ app.post('/logout', (req, res) => {
     res.cookie('massiropass', 'false', { maxAge: 0, httpOnly: true });
     return res.redirect('/login');
 });
+
 //cookie
 function parseCookies(request) {
     const list = {};
@@ -99,6 +105,7 @@ const routes = [
   { path: '/hot', file: '/manga/hot.html' },
   { path: '/favorite', file: '/manga/favorite.html' }
 ]
+
 app.get('/redirect', (req, res) => {
   const subp = req.query.p;
   const id= req.query.id;
