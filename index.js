@@ -59,7 +59,7 @@ app.get('/login/if', async (req, res) => {
 
 // ログインページ
 app.get('/login', (req, res) => {
-    res.render('login/login', { error: null }); // 拡張子不要、'login/login'でOK
+    res.render('login', { error: null }); 
 });
 
 
