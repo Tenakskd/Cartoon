@@ -4,17 +4,23 @@ import path from 'node:path';
 import cookieParser from 'cookie-parser';
 import session from 'express-session';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
-const app = express(server);
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const app = express();
+const server = http.createServer(app);
 const PORT = 8080;
-const limit = process.env.LIMIT || 50;
-const user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Safari/605.1.15";
-app.use(express.urlencoded({ extended: true }));
-app.use(cors());
 
 app.set('view engine', 'ejs');
+app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
     secret: 'yasumadayoooooooooooharusameeeeeee',
