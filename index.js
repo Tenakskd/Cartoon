@@ -6,18 +6,18 @@ import session from 'express-session';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname)); // プロジェクトルートを基準にする
-
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const app = express();
+const app = express(); // <-- ここを先に書く
 const server = http.createServer(app);
 const PORT = 8080;
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname)); 
 app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
