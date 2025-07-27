@@ -2,8 +2,8 @@ const mangaList = [
   {
     title: "ふしだらアタック",
     episode: "第55話",
-    views: 0,
-    image: "https://cdn.jsdelivr.net/gh/konnnnitiha84238/manga-assets@main/hajirau.jpg"
+    views: 4.0M,
+    image: "https://api.codetabs.com/v1/proxy/?quest=https://i.mangaruu.xyz/7874_1751565703914.webp"
   }
 ];
 
