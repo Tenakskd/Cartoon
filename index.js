@@ -17,7 +17,7 @@ const server = http.createServer(app);
 const PORT = 8080;
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname)); 
+app.set('views', path.join(__dirname, 'login'));
 app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
