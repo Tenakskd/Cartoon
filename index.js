@@ -6,6 +6,9 @@ import session from 'express-session';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname)); // プロジェクトルートを基準にする
+
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
@@ -15,10 +18,6 @@ const __dirname = dirname(__filename);
 const app = express();
 const server = http.createServer(app);
 const PORT = 8080;
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'login'));
-
 app.use(cors());
 app.use(cookieParser());
 app.use(bodyParser.json());
@@ -60,8 +59,9 @@ app.get('/login/if', async (req, res) => {
 
 // ログインページ
 app.get('/login', (req, res) => {
-    res.render('../login/login.ejs')
+    res.render('login/login', { error: null }); // 拡張子不要、'login/login'でOK
 });
+
 
 // パスワード確認
 app.post('/login', (req, res) => {
